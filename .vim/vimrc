@@ -21,7 +21,7 @@ call plug#end()
 " #############################################
 
 set number           " Show line numbers
-set relativenumber   " Show relative numbers
+" set relativenumber   " Show relative numbers
 set linebreak        " Break lines at word (requires Wrap lines)
 set showbreak=+++    " Wrap-broken line prefix
 set textwidth=100    " Line wrap (number of cols)
@@ -51,7 +51,7 @@ set undolevels=1000               " Number of undo levels
 set backspace=indent,eol,start    " Backspace behaviour
 
 syntax enable
-colorscheme smyck
+" colorscheme smyck
 
 " NerdTree Configuration 
 " ----------------------
@@ -99,6 +99,13 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+
+" ##############################################
+" CtrlP Settings
+" ##############################################
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " ##############################################
 " KeyBindings
