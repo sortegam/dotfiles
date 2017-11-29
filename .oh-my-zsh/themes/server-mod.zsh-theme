@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-local HOSTNAME=$(hostname)
+local HOSTNAME=$(hostname -f)
 local LAMBDA="%(?,%{$fg_bold[green]%}🐧 [$HOSTNAME],%{$fg_bold[red]%}i🐧i [$HOSTNAME])"
 if [[ "$USER" == "root" ]]; then USERCOLOR="red"; else USERCOLOR="yellow"; fi
 
